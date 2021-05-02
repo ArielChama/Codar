@@ -1,0 +1,354 @@
+/* 
+    Criado e desenvolvdo por Ariel Chama
+    github.com/ArielChama
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Configs */
+.button {
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.8rem;
+    background-color: #D6000D;
+    text-decoration: none;
+}
+
+
+.title {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.texts {
+    font-size: 18px;
+}
+
+
+/* Icons */
+.icons {
+    color: #D6000D;
+}
+
+
+
+/* Header */
+.title-header {
+    color: #D6000D;
+}
+
+.title-point {
+    color: black;
+}
+
+.nav-menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-menu > ul {
+    display: flex;
+}
+
+.nav-item {
+    padding: 10px 0 10px 24px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 25px;
+}
+
+.button-login {
+    padding: 0.6rem 2.5rem;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+/* Body */
+
+/* Primeira secção */
+.container {
+    margin: 15rem 15rem;
+}
+
+.row {
+    display: flex;
+}
+
+.images {
+    width: 25rem;
+}
+
+.col-first {
+    flex-grow: 1;
+}
+
+.col-secondary {
+    flex-grow: 1;
+}
+
+.col-secondary-content {
+    margin: 2rem 0 3.3rem 0;
+}
+
+.subtitle {
+    color: #D6000D;
+    font-size: 66px;
+}
+
+.text {
+    font-size: 1.8rem;
+}
+
+.button-orca {
+    padding: 0.8rem 4rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+/* Segunda secção */
+.container-info {
+    margin-top: 20rem;
+}
+
+.list {
+    margin-top: 5rem;
+}
+
+.list-item {
+    font-size: 21px;
+    margin-bottom: 1rem;
+}
+
+/* Forms */
+.inputs {
+    padding-top: 17px;
+}
+
+.input-number {
+    width: 15em;
+    padding-left: 1rem;
+    height: 3.5em;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    margin-right: 10px;
+    background-color: rgba(204, 204, 204, 0.692);
+}
+
+.button-form {
+    padding: 1.2rem 2.5rem 1.2rem 2.9rem;
+    color: white;
+}
+
+/* Comments */
+.comments {
+    margin: 20rem 9rem 10rem 9rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(204, 204, 204, 0.692);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    width: 39rem;
+    height: 12rem;
+    padding: 2rem 2rem;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #D6000D;
+    padding: 3rem;
+}
+
+.content {
+    margin-left: 30px;
+}
+
+.card-name {
+    font-size: 25px;
+}
+
+.card-name-other {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+.div-footer {
+    background-color: black;
+    padding: 5rem;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.footer-subtitle {
+    font-size: 1.8rem;
+}
+
+
+
+/*****
+
+Responsividade
+
+********/
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 15rem 0rem;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .button-login {
+        padding: 0.4rem 1rem;
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row-m {
+        flex-direction: row;
+    }
+
+    .collum-m {
+        flex-direction: column;
+    }
+
+    .col-first {
+        text-align: center;
+    }
+    
+    .images {
+        width: 20rem;
+    }
+
+    .col-secondary {
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 45px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+
+    .cols-collum {
+        flex-direction: column-reverse;
+    }
+
+    .forms {
+        text-align: center;
+    }
+
+    .input-number {
+        margin-bottom: 15px;
+    }
+
+
+    .comments {
+        margin: 10rem 0rem 10rem 1rem;
+    }
+
+    .cols-row {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 20rem;
+        margin-bottom: 5rem;
+        padding: 1rem 1rem;
+    }
+
+    .circle {
+        border-radius: 50%;
+        padding: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .texts {
+        font-size: 14px;
+    }
+    
+    .card-name {
+        font-size: 17px;
+    }
+    
+    .card-name-other {
+        font-size: 18px;
+    }
+}
+
+  
+@media (min-width: 768px) {
+    
+}
+  
+@media (min-width: 992px) {
+    
+}
+  
+@media (min-width: 1200px) {
+    
+}
